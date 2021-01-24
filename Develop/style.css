@@ -7,58 +7,79 @@
 html,
 body,
 .wrapper {
+  /* positioning */
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
+  /* font */
   font-family: sans-serif;
+
+  /* sets background color */
   background-color: #f9fbfd;
 }
 
 .wrapper {
+  /* positioning */
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 header {
+  /* font */
+  color: hsl(206, 17%, 28%);
   text-align: center;
+
+  /* positioning */
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
 }
 
 .card {
+  /* sets background color */
   background-color: hsl(0, 0%, 100%);
+
+  /* border controls */
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+
+  /* font */
   color: hsl(206, 17%, 28%);
   font-size: 18px;
+
+  /* positioning */
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
 }
 
 .card-header::after {
+  /* positioning */
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
   height: 2px;
+
+  /* sets the background color */
+  background: #e7e9eb;
 }
 
 .card-body {
+  /* positioning  */
   min-height: 100px;
 }
 
 .card-footer {
+  /* positioning  */
   text-align: center;
 }
 
 .card-footer::before {
+  /* positioning */
   content: " ";
   display: block;
   width: 100%;
@@ -67,21 +88,28 @@ header {
 }
 
 .card-footer::after {
+  /* positioning  */
   content: " ";
   display: block;
   clear: both;
 }
 
 .btn {
-  border: none;
+  /* sets the background color */
   background-color: hsl(360, 91%, 36%);
+
+  /* border controls */
+  border: none;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+
+  /* font */
   line-height: 22px;
+  font-size: 22px;
+  color: hsl(0, 0%, 100%);
+
+  /* positioning  */
+  display: inline-block;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
   text-align: center;
@@ -103,35 +131,51 @@ button[disabled] {
   appearance: none;
   border: none;
   display: block;
+
+  /* positioning */
   width: 100%;
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+
+  /* font */
+  font-size: 1.2rem;
+  text-align: center;
+
+  /* border controls */
   border: 2px dashed #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
 }
 
+
+/* controls screen settings when screen is 690px or less */
 @media (max-width: 690px) {
   .btn {
+    /* font */
     font-size: 1rem;
+
+    /* positioning */
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
 
   #password {
+    /* font */
     font-size: 1rem;
   }
 }
 
+
+/* controls screen settings when screen is 500px or less */
 @media (max-width: 500px) {
   .btn {
+    /* font */
     font-size: 0.8rem;
   }
 }
+

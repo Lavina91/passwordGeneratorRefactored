@@ -2,16 +2,16 @@
 var generateBtn = document.querySelector("#generate");
 
 // array to store all lowercase letters 
-var lower = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+var lower = ['a' , 'b'  ,'c' , 'd' , 'e' , 'f', 'g' , 'h' , 'i' , 'j' , 'k' , 'l' , 'm' , 'n' , 'o' , 'p' , 'q' , 'r' , 's' , 't' , 'u' , 'v' , 'w' , 'x' , 'y' , 'z' ]
 
 // array to store all uppercase letters
-var upper = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+var upper = ['A' , 'B' , 'C' , 'D' , 'E' , 'F' , 'G' , 'H' , 'I' , 'J' , 'K' , 'L' , 'M' , 'N' , 'O' , 'P' , 'Q' , 'R' , 'S' , 'T' , 'U' , 'V' , 'W' , 'X' , 'Y' , 'Z']
 
 // array to store all numbers
-var num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+var num = [0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 ]
 
 // array to store all special characters 
-var special = ['@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+']
+var special = ['@' , '#' , '$' , '%' , '^' , '&' , '*' , '(' , ')' , '_' , '+' ]
 
 
 
@@ -116,6 +116,9 @@ if (userChoices.special === true){
 var lastPass = [];
 
 
+
+
+
 // for loop to pull random values from variable passPool 
 for (i = 0; i < userChoices.length; i++){
   var getRandom = passPool[Math.floor(Math.random() * passPool.length)];
@@ -126,16 +129,9 @@ for (i = 0; i < userChoices.length; i++){
 
 
 
-
-
-
-
-
-
-  var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = lastPass;
 
 }
 
