@@ -112,7 +112,17 @@ if (userChoices.special === true){
   }
 }
 
+// created a variable to store the generated password
+var lastPass = [];
 
+
+// for loop to pull random values from variable passPool 
+for (i = 0; i < userChoices.length; i++){
+  var getRandom = passPool[Math.floor(Math.random() * passPool.length)];
+  console.log(getRandom);
+  // pushes random values to variable lastPass
+  lastPass.push(getRandom);
+}
 
 
 
