@@ -24,7 +24,12 @@ function writePassword() {
 var userLength = window.prompt('What length do you want your password (8 - 128)?');
   console.log(userLength);
 
-
+//  while loop to check if user put the appropriate number for password length
+while(userLength < 8 || userLength > 128){
+  alert('Please choose 8 - 128 characters for the length of your password');
+  // repeats prompt to user
+    var userLength = window.prompt('What length do you want your password (8 - 128)?');
+};
 
 // prompt user for if they want to use lowercase characters 
 var userLower = window.confirm('Do you want to use lowercase characters?');
@@ -47,6 +52,20 @@ var userNum = window.confirm('Do you want to use numeric characters?');
 var userSpecial = window.confirm('Do you want to use special characters?');
   console.log(userSpecial);
 
+// created a while loop to check if user inputs at least one character type
+  while(!userLower && !userUpper && !userNum && !userSpecial) {
+    alert('Please choose at least one character type');
+
+// repeats prompt to user
+var userLower = window.confirm('Do you want to use lowercase characters?');
+  console.log(userLower);
+var userUpper = window.confirm('Do you want to use uppercase characters?');
+  console.log(userUpper);
+var userNum = window.confirm('Do you want to use numeric characters?');
+  console.log(userNum);
+var userSpecial = window.confirm('Do you want to use special characters?');
+  console.log(userSpecial);
+  }
 
 
 
