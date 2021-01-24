@@ -68,8 +68,20 @@ var userSpecial = window.confirm('Do you want to use special characters?');
   }
 
 
+// created an object to store the multiple inputs received from the user 
+  var userChoices = {
+    length: userLength,
+    lowerCase: userLower,
+    upperCase: userUpper,
+    number: userNum,
+    special: userSpecial,
+  }
+  console.log(userChoices);
 
 
+// created a variable to store all available character types based on user input
+  var passPool = [];
+  console.log(passPool);
 
 
 
