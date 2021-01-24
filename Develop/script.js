@@ -84,6 +84,36 @@ var userSpecial = window.confirm('Do you want to use special characters?');
   console.log(passPool);
 
 
+// if/for loop to check user input for lowercase characters, if true push variable lower to passPool
+if (userChoices.lowerCase === true){
+  for(i = 0; i < lower.length; i++){
+    passPool.push(lower[i])
+  }
+}
+
+// if/for loop to check user input for uppercase characters, if true push variable upper to passPool
+if (userChoices.upperCase === true){
+  for(i = 0; i < upper.length; i++){
+    passPool.push(upper[i]);
+  }
+}
+
+// if/for loop to check user input for numeric characters, if true push variable num to passPool
+if (userChoices.number === true){
+  for(i = 0; i < num.length; i++){
+    passPool.push(num[i]);
+  }
+}
+
+// if/for loop to check user input for special characters, if true push variable special to passPool
+if (userChoices.special === true){
+  for(i = 0; i < special.length; i++){
+    passPool.push(special[i]);
+  }
+}
+
+
+
 
 
 
