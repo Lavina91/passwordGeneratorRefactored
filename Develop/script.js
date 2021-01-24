@@ -21,23 +21,31 @@ var special = ['@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+']
 function writePassword() {
 
 // prompts user to choose length of the generated password
+var userLength = window.prompt('What length do you want your password (8 - 128)?');
+  console.log(userLength);
 
 
 
 // prompt user for if they want to use lowercase characters 
+var userLower = window.confirm('Do you want to use lowercase characters?');
+  console.log(userLower);
 
 
 
  // prompt user if they want to use uppercase characters 
+var userUpper = window.confirm('Do you want to use uppercase characters?');
+  console.log(userUpper);
+
+
+// prompt user if they want use numeric characters 
+var userNum = window.confirm('Do you want to use numeric characters?');
+  console.log(userNum);
 
 
 
 // prompt user if they want use numeric characters 
-
-
-
-// prompt user if they want use numeric characters 
-
+var userSpecial = window.confirm('Do you want to use special characters?');
+  console.log(userSpecial);
 
 
 
