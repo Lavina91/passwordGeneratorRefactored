@@ -119,6 +119,8 @@ var lastPass = [];
 
 
 
+
+
 // for loop to pull random values from variable passPool 
 for (i = 0; i < userChoices.length; i++){
   var getRandom = passPool[Math.floor(Math.random() * passPool.length)];
@@ -131,7 +133,10 @@ for (i = 0; i < userChoices.length; i++){
 
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = lastPass;
+  var together = lastPass.join('');
+console.log(together);
+
+  passwordText.value = together;
 
 }
 
